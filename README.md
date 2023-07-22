@@ -60,6 +60,13 @@ This assignment forces you to utilize advanced JavaScript, HTML and CSS skills t
 
 ## 🏆 Bonus
 
+Once the assignment is completed, brainstorm other ways to enhance this Weather Dashboard!
+
+* Do further research on other Weather Dashboard's. Evaluate other websites that offer weather dashboards and use that for inspiration to improve this Weather Dashboard
+
+* Are there other APIs that can be used for this Weather Dashboard?
+
+* Are there any additional features that can be added to this Weather Dashboard and can it offer more weather info cards?
 
 
 ## 💡Credits
