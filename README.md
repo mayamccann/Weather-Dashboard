@@ -2,7 +2,7 @@
 Server-Side APIs with feature dynamically updated HTML and CSS
 
 ## 💡 Background
-For this assignment, the goal is to create a Code Quiz that focuses on Web APIs. This challenges allows us to focus on our JavaScript skills and allows further practice with our HTML and CSS knowledge learned in the UConn Coding Bootcamp. It is significant to note that this Web APIs Code Quiz can be shared with those in the computer science field. 
+For this assignment, the goal is to create a Weather Dashboard that focuses on Server-Side APIs. Third-party APIs grant access to its data and functionality through requests of specific parameters to a URL. Obtaining data from another application's APIs and using it for their own purposes is common among developers.  This challenges allows us to focus on our JavaScript skills and allows further practice with our HTML and CSS knowledge learned in the UConn Coding Bootcamp. It is significant to note that this Weather Dashboard can be shared with those in the computer science community.
 
 ## 💡 Description 
 
@@ -10,7 +10,7 @@ For this assignment, the goal is to create a Code Quiz that focuses on Web APIs.
 
 * JavaScript, HTML and CSS skills will be showcased when users view this webpage that focuses on functionality of the application.
 
-* The webpage will offer users a chance of competition! Once the quiz is completed, the user will input their initials to submit their scores and the highest scores will be on display! This code quiz is timed and allows users to retry as many times as desired. 
+* The webpage will offer users a chance for users to obtain weather information based on their desired location. The user will research the weather of their desired city and recieve the current and future conditions that is presented with the city name, date, icon representation of weather conditions, temperature, humidity, and the wind speed.
 
 
 ## 💡 User Story
