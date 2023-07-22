@@ -1,8 +1,5 @@
-# Weather-Dashboard
+# 🏆 Weather Dashboard 🏆
 Server-Side APIs with feature dynamically updated HTML and CSS
-
-# 🏆 Building a Code Quiz : Web APIs 🏆
-Building a Timed Coding Quiz with Multiple-Choice Questions with JS, HTML and CSS
 
 ## 💡 Background
 For this assignment, the goal is to create a Code Quiz that focuses on Web APIs. This challenges allows us to focus on our JavaScript skills and allows further practice with our HTML and CSS knowledge learned in the UConn Coding Bootcamp. It is significant to note that this Web APIs Code Quiz can be shared with those in the computer science field. 
@@ -20,7 +17,7 @@ For this assignment, the goal is to create a Code Quiz that focuses on Web APIs.
 AS A Bootcamp student with knowledge with JavaScript, HTML and CSS
 I WANT to build a webpage that showcases my Weather Dashboard
 SO THAT I can share a webpage that offers Users exposure to learning and reviewing the knowledge I have obtained within the computer science field.
-I WANT to focus on catering to all in the professional and education world to benefit those by learning additional knowledge through completion of the quiz. 
+I WANT to focus on catering to all in the professional and education world to benefit those by learning additional knowledge through completion of the Weather Dashboard.
 
 ## 💡 Acceptance Criteria
 GIVEN I must build an interactive webpage
