@@ -2,3 +2,8 @@ h1 {
     margin-bottom: 0%;
     background-image: linear-gradient(to right, orange, pink, light blue, light rgb(218, 79, 218));
 }
+
+#forecast {
+    left: -5%;
+    position: absolute;
+}
