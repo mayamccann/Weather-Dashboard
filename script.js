@@ -23,3 +23,6 @@ if (history.length > 0) {
     weatherfunction(hisotry[history.length -1]); 
 }
 
+for (var i = 0; i < history.length; i++) {
+    createrow(history[i]);
+}
