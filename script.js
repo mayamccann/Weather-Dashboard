@@ -31,3 +31,10 @@ function createrow(text) {
     var listItem = $("<li>").addClass ("list-group-item").text (text);
     $(".history").append(listItem);
 }
+
+$(".history").on("click", "li", function () {
+    weatherfunction($(this).text());
+    weatherforecast($(this).text());
+});
+
+function weatherfunction(searchTerm) {
