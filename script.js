@@ -53,4 +53,6 @@ function weatherfunction(searchTerm) {
 
     $("#today").empty();
 
+    var title = $("<h3>").addClass("card-title").text(data.name + " (" + new Date ().toLocaleDateString() + ")");
+    var img = $("<img").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
     
