@@ -18,3 +18,8 @@ if (keycode === 13) {
 });
 
 var history = JSON.parse (localStorage.getItem("history")) || [];
+
+if (history.length > 0) {
+    weatherfunction(hisotry[history.length -1]); 
+}
+
