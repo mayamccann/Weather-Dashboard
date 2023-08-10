@@ -50,4 +50,7 @@ function weatherfunction(searchTerm) {
         localStorage.setItem("history", JSON.stringify(history));
         createrow(searchTerm);
     }
+
+    $("#today").empty();
+
     
