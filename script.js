@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready (function () {
 
 $("#search-button").on("click", function () {
 
@@ -8,3 +8,7 @@ $("search-value").val ("");
 weatherfunction (searchTerm);
 weatherforecast (searchTerm);
 }) ;
+
+$("#search-button").keypress (function (event)) {
+
+}
