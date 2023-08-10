@@ -16,3 +16,5 @@ if (keycode === 13) {
     weatherforecast (searchTerm);
 }
 });
+
+var history = JSON.parse (localStorage.getItem("history")) || [];
