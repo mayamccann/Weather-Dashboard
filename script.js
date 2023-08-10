@@ -9,8 +9,10 @@ weatherfunction (searchTerm);
 weatherforecast (searchTerm);
 }) ;
 
-$("#search-button").keypress (function (event)) {
+$("#search-button").keypress (function (event) {
 var keycode = (event.keyCode ? event.keyCode : event.which);
-
+if (keycode === 13) {
+    weatherfunction (searchTerm);
+    weatherforecast (searchTerm);
 }
-}
+});
