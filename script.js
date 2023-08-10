@@ -10,5 +10,7 @@ weatherforecast (searchTerm);
 }) ;
 
 $("#search-button").keypress (function (event)) {
+var keycode = (event.keyCode ? event.keyCode : event.which);
 
+}
 }
