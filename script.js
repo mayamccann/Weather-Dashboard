@@ -26,3 +26,8 @@ if (history.length > 0) {
 for (var i = 0; i < history.length; i++) {
     createrow(history[i]);
 }
+
+function createrow(text) {
+    var listItem = $("<li>").addClass ("list-group-item").text (text);
+    $(".history").append(listItem);
+}
