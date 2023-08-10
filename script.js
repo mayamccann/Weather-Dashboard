@@ -42,3 +42,12 @@ function weatherfunction(searchTerm) {
     $.ajax ({
     type: "GET"
     url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d",
+
+    }) .then(function (data) {
+
+    if (history.indexOf (searchTerm) === -1) {
+        history.push(searchTerm);
+        localStorage.setItem("history", JSON.stringify(history));
+        createrow(searchTerm);
+    }
+    
