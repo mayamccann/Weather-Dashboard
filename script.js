@@ -38,3 +38,7 @@ $(".history").on("click", "li", function () {
 });
 
 function weatherfunction(searchTerm) {
+
+    $.ajax ({
+    type: "GET"
+    url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d",
