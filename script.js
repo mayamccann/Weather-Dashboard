@@ -55,4 +55,10 @@ function weatherfunction(searchTerm) {
 
     var title = $("<h3>").addClass("card-title").text(data.name + " (" + new Date ().toLocaleDateString() + ")");
     var img = $("<img").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+
+    var card = $("<div>").addClass("card");
+    var cardbody = $("<div>").addClass("card-body");
+    var wind = $("<p>").addClass("card-text").text("wind Speed:" + data.wind.speed + "MPH");
+    var humid = $("<p>").addClass("card-text").text("Humidity:" + data.main.humidity + "%");
+    var temp = $("<p>").addClass("card-text").text("Temperature:" + data.main.temp + "K");
     
