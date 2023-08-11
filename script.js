@@ -105,7 +105,7 @@ $(document).ready(function () {
                 type: "GET",
                 url: "https://api.openweathermap.org/data/2.5/forecast?q" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d&units=imperial",
 
-            }).then(function (data) {
+            }).then (function (data) {
                 console.log(data);
                 $("forecast").html("<h4 class=\"mt-3"\"5-Day Forecast:</h4>").append("<div class=\"row\">");
 
@@ -122,3 +122,13 @@ $(document).ready(function () {
 
                     colfive.append(cardfive.append(cardbodyfive.append(titlefive, imgfive, tempfive)));
                     
+                    $("forecast .row").append(colfive);
+
+                }
+            }
+        });
+    }
+
+});
+
+
