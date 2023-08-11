@@ -91,3 +91,11 @@ function weatherfunction(searchTerm) {
     $("#today .card-body").append(uvindex.append(btn));
 
 });
+
+// // // 
+title.append(img);
+cardbody.append(title, temp, humid, wind);
+card.append(cardbody);
+$("#today").append(card);
+console.log(data);
+    });
