@@ -100,14 +100,22 @@ $(document).ready(function () {
             console.log(data);
         });
 
-function weatherforecast(searchTerm){
-$.ajax({
-    type:"GET",
-    url: "https://api.openweathermap.org/data/2.5/forecast?q" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d&units=imperial",
+        function weatherforecast(searchTerm) {
+            $.ajax({
+                type: "GET",
+                url: "https://api.openweathermap.org/data/2.5/forecast?q" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d&units=imperial",
 
-}).then(function (data) {
-    console.log(data);
-$("forecast").html("<h4 class=\"mt-3"\"5-Day Forecast:</h4>").append("<div class=\"row\">");
+            }).then(function (data) {
+                console.log(data);
+                $("forecast").html("<h4 class=\"mt-3"\"5-Day Forecast:</h4>").append("<div class=\"row\">");
 
-for (var i = 0; i < data.list.length; i++) {
-    
+                for (var i = 0; i < data.list.length; i++) {
+
+                    var titlefive = $("<h3>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
+                    var imgfive = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
+                    var colfive = $("<div>").addClass("col-md-2.5");
+                    var cardfive = $("<div>").addClass("card bg-primary text-white");
+                    var cardbodyfive = $("<div>").addClass("card-body p-2");
+                    var humidfive = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
+                    var tempfive = $("<p>").addClass("card-text").text("Temperature:" + data.list[i].main.temp + "F");
+                    
