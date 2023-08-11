@@ -86,3 +86,8 @@ function weatherfunction(searchTerm) {
     } else {
         btn.addClass("btn-danger");
     }
+
+    cardbody.append(uvindex);
+    $("#today .card-body").append(uvindex.append(btn));
+
+});
