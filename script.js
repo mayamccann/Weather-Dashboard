@@ -70,3 +70,7 @@ function weatherfunction(searchTerm) {
     $.ajax({
     type: "GET"
     url: "https://api.openweathermap.org/data/2.5/uvi?appid=9f112416334ce37769e5c8683b218a0d&lat=" + lat + "&lon=" + lon,
+
+    }) .then(function (response) {
+        console.assert.log(response);
+    
