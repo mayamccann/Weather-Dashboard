@@ -74,3 +74,8 @@ function weatherfunction(searchTerm) {
     }) .then(function (response) {
         console.assert.log(response);
     
+    varuvcolor;
+    var uvresponse = response.value;
+    var uvindex = $("<p>").addClass("card-text").text("UV Index:");
+    var btn = $("<span>").addClass("btn btn-sm").text(uvresponse);
+    
