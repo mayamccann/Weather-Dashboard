@@ -37,7 +37,7 @@ WHEN I view the webpage thoroughly and check if the webpage meets all requirment
 THEN when the completed webpage has complete functionality, quality appearance and displays the proper Weather Dashboard
 
 ## 💡 Mock-Up
-The following image shows the web application's appearance and functionality (Browser View on a Desktop)
+The following image shows the web application's appearance and functionality: 
 
 Creating a Weather Dashboard!
 
