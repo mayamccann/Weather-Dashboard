@@ -62,3 +62,8 @@ function weatherfunction(searchTerm) {
     var humid = $("<p>").addClass("card-text").text("Humidity:" + data.main.humidity + "%");
     var temp = $("<p>").addClass("card-text").text("Temperature:" + data.main.temp + "K");
     
+    console.log(data)
+    
+    var lon = data.coord.lon;
+    var lat= data.coord.lat;
+    
