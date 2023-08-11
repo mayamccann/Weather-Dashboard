@@ -78,4 +78,11 @@ function weatherfunction(searchTerm) {
     var uvresponse = response.value;
     var uvindex = $("<p>").addClass("card-text").text("UV Index:");
     var btn = $("<span>").addClass("btn btn-sm").text(uvresponse);
-    
+
+    if (uvresponse < 3) {
+        btn.addClass("btn-success");
+    } else if (uvresponse <7) {
+        btn.addClass("btn-warning");
+    } else {
+        btn.addClass("btn-danger");
+    }
