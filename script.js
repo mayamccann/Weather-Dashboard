@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         var searchTerm = $("#search-value").val();
 
-        $("search-value").val("");
+        $("#search-value").val("");
         weatherfunction(searchTerm);
         weatherforecast(searchTerm);
     });
@@ -20,7 +20,7 @@ $(document).ready(function () {
     var history = JSON.parse(localStorage.getItem("history")) || [];
 
     if (history.length > 0) {
-        weatherfunction(hisotry[history.length - 1]);
+        weatherfunction(history[history.length - 1]);
     }
 
     for (var i = 0; i < history.length; i++) {
@@ -37,11 +37,11 @@ $(document).ready(function () {
         weatherforecast($(this).text());
     });
 
-    function weatherfunction(searchTerm) {
+    function weatherfunction (searchTerm) {
 
         $.ajax({
-            type: "GET"
-    url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d",
+            type: "GET",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=9f112416334ce37769e5c8683b218a0d",
 
         }).then(function (data) {
 
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
             var card = $("<div>").addClass("card");
             var cardbody = $("<div>").addClass("card-body");
-            var wind = $("<p>").addClass("card-text").text("wind Speed:" + data.wind.speed + "MPH");
+            var wind = $("<p>").addClass("card-text").text("Wind Speed:" + data.wind.speed + "MPH");
             var humid = $("<p>").addClass("card-text").text("Humidity:" + data.main.humidity + "%");
             var temp = $("<p>").addClass("card-text").text("Temperature:" + data.main.temp + "K");
 
