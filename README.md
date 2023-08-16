@@ -6,7 +6,7 @@ For this assignment, the goal is to create a Weather Dashboard that focuses on S
 
 ## 💡 Description 
 
-* The purpose of this challenge is to create an interactive webpage that allows users to complete a timed-coding quiz! The funcitionality of this web application will determine the level of success this webpage holds to its users. Not only do the interactive users embrace the applied knowledge of the developers, this quiz offers furthering education through the quiz. This focal point of this code quiz is Web APIs, but there are bonus questions that cover HTML, CSS, JavaScript and Git. 
+* The purpose of this challenge is to create an interactive webpage that allows users to obtain weather info cards based on the location desired by the user! The functionality of this web application will determine the level of success this webpage holds to its users. Not only do the interactive users embrace the applied knowledge of the developers, this weather dashboard webpage allows users to understand the importance of APIs. The focal point of the Weather Dashboard is to benefit users by allowing easy access to assist in planning their day or travels.
 
 * JavaScript, HTML and CSS skills will be showcased when users view this webpage that focuses on functionality of the application.
 
