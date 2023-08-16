@@ -72,9 +72,9 @@ $(document).ready(function () {
                 url: "https://api.openweathermap.org/data/2.5/uvi?appid=9f112416334ce37769e5c8683b218a0d&lat=" + lat + "&lon=" + lon,
 
             }).then(function (response) {
-                console.assert.log(response);
+                console.log(response);
 
-                varuvcolor;
+                var uvcolor;
                 var uvresponse = response.value;
                 var uvindex = $("<p>").addClass("card-text").text("UV Index:");
                 var btn = $("<span>").addClass("btn btn-sm").text(uvresponse);
