@@ -197,3 +197,22 @@ var fivedayforecastsection = function(cityName) {
 
 };
 
+// Search submission
+$("#search-form").on("submit", function() {
+    event.preventDefault();
+
+//name of city search
+var cityName = $("#search-input").val();
+
+if (cityName === "." || cityName == null {
+    //alert : search is empty
+    alert("Please enter the name of the city.");
+    event.preventDefault();
+}else {
+    //city is valid --> added to history 
+    currentweathersection(cityName);
+    fivedayforecastsection(cityName);
+
+}
+});
+
