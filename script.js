@@ -98,3 +98,20 @@ currenticon.addClass("current-weather-icon");
 var currenticoncode = response.current.weather[0].icon;
 currenticon.attr("src", 'https://openweathermap.org/img/wn/${currenticoncode}@2x.png');
 
+//Temperature : status : current
+var currenttemperature = $("#current-temperature");
+currenttemperature.text("Temperature: " + response.current.temp + "/u00B0F");
+
+//Humidity : status : current
+var currenthumidity = $("#current-humidity");
+currenthumidity.text("Humidity: " + response.current.humidity + "%");
+
+//Wind Speed : status : current
+var currentwindspeed = $("#current-wind-speed");
+currentwindspeed.text("Wind Speed: " + response.current.wind_speed + "MPH");
+
+//UV Index : status : current
+var currentuvindex = $("#current-uv-index");
+currentuvindex.text("UV Index: ");
+var currentnumber = $("#current-number");
+currentnumber.text(response.current.uvi);
