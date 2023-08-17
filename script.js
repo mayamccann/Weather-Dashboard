@@ -29,3 +29,13 @@ if (savedsearches.length > 0) {
     var previoussavedsearches = localStorage.getItem("savedsearches");
     savedsearches = JSON.parse(previoussavedsearches);
 }
+
+//Saved searches : City name to array 
+savedsearches.push(cityName);
+localStorage.setItem("savedsearches", JSON.stringify(savedsearches));
+
+//Search : RESET
+$("#search-input").val("");
+
+};
+
