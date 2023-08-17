@@ -40,7 +40,7 @@ $("#search-input").val("");
 };
 
 // Search history into search history container
-var loadsearchhistory = localStorage.getItem("savedsearches");
+var loadsearchhistory = function() {
 
 //Receive saved history
 var savedsearchhistory = localStorage.getItem("savedsearches");
