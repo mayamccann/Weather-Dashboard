@@ -126,3 +126,16 @@ if (response.current.uvi <= 2) {
 }
 
 })
+
+.catch(function(err) {
+
+    //search input : RESET
+    $("#search-input").val("");
+
+    //if an error
+    alert("The city that you searched for cannot be found. Please enter a valid city.");
+
+});
+
+};
+
