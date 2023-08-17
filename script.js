@@ -115,3 +115,14 @@ var currentuvindex = $("#current-uv-index");
 currentuvindex.text("UV Index: ");
 var currentnumber = $("#current-number");
 currentnumber.text(response.current.uvi);
+
+//Color to Index Numbers : red, yellow or green (background color)
+if (response.current.uvi <= 2) {
+    currentnumber.addClass("favorable");
+} else if (response.current.uvi >= 3 && response.current.uvi <= 7) {
+    currentnumber.addClass("moderate");
+} else {
+    currentnumber.addClass("severe");
+}
+
+})
