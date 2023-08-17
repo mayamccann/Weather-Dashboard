@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 <!--Save Icon Stylesheet-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
 
 <!--CSS Stylesheet-->
@@ -20,14 +21,14 @@
 <body class="body">
     <header class="header">
             <div class="h1-container d-flex translate-middle bg-dark justify-content-center">
-                <h1 class="h1 text-white">WEATHER DASHBOARD</h1>
+                <h1 class="h1 text-light">WEATHER DASHBOARD</h1>
             </div>
     </header>
    
     <main class="main">
         <div class="container-fluid">
             <div class="row page-content">
-
+<!--Col #1-->
         <div class="col-sm-4 bg-light p-0">
     
             <div class="form-container">
@@ -87,9 +88,17 @@
     
     <!---Forecast : 5 Day : Title-->
     <h2 class="future-forecast-title" id="future-forecast-title"></h2>
-    <div id="forecasts-cards-cotainer" class="forecasts-cards-cotainer d-flex justify-content-between">
+    <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
     
     <!--Forecast Card for Future-->
+
+    <div class="future-card bg-primary rounded">
+        <p class="future-date" id="future-date-1"></p>
+        <img id="future-icon-1" src="" alt="">
+        <p class="future-temp" id="future-temp-1"></p>
+        <p class="future-humidity" id="future-humidity-1"></p>
+    </div>
+
     <div class="future-card bg-primary rounded">
         <p class="future-date" id="future-date-2"></p>
         <img id="future-icon-2" src="" alt="">
@@ -114,7 +123,9 @@
     <div class="future-card bg-primary rounded">
         <p class="future-date" id="future-date-5"></p>
         <img id="future-icon-5" src="" alt="">
-        <p class="future-temp" id="future-humidity-5"></p>
+        <p class="future-temp" id="future-temp-5"></p>
+        <p class="future-humidity" id="future-humidity-5"></p>
+
     </div>
 
     </div>
