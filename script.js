@@ -71,7 +71,19 @@ var currentweathersection =function(cityName) {
 
 .then(function(response) {
 //city coordinates
-var citylon= response.coord.lon;
-var citylat= response.coord.lat;
+var cityLon= response.coord.lon;
+var cityLat= response.coord.lat;
 }
+
+fetch('https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely, hourly,alerts&units=imperial&appid=${apiKey}')
+//response of api call --> objects
+.then(function(response) {
+    return response.json();
+})
+
+//data of response --> current weather section
+.then(function(response){
+    searchhistorylist(cityName);
+
+//current weather container
 
