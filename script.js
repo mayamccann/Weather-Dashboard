@@ -3,13 +3,19 @@
 var apiKey = "1b18ce13c84e21faafb19c931bb29331";
 var savedsearches = [];
 
-    $("#search-button").keypress(function (event) {
-        var keycode = (event.keyCode ? event.keyCode : event.which);
-        if (keycode === 13) {
-            weatherfunction(searchTerm);
-            weatherforecast(searchTerm);
-        }
-    });
+// Search History : Search for a City
+
+var searchhistorylist = function(cityName) {
+    $('.past-search:contains("' + cityName + '")').remove();
+    
+//Entry for city 
+
+var searchhistoryEntry = $("<p>");
+searchhistoryEntry.addClass("past-search");
+searchhistoryEntry.text(cityName);
+
+
+
 
     var history = JSON.parse(localStorage.getItem("history")) || [];
 
