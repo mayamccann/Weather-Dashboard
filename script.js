@@ -86,4 +86,15 @@ fetch('https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${city
     searchhistorylist(cityName);
 
 //current weather container
+var currentweathercontainer = $("#current-weather-container");
+currentweathercontainer.addClass("current-weather-container");
+
+//Weather section title : weather icon, city, date
+var currenttitle = $("#current-title");
+var currentday = moment().format("MM/DD/YYYY");
+currenttitle.text('${cityName} (${currentday})');
+var currenticon = $("current-weather-icon");
+currenticon.addClass("current-weather-icon");
+var currenticoncode = response.current.weather[0].icon;
+currenticon.attr("src", 'https://openweathermap.org/img/wn/${currenticoncode}@2x.png');
 
