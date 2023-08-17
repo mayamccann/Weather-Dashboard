@@ -1,13 +1,7 @@
-$(document).ready(function () {
+//variables : global 
 
-    $("#search-button").on("click", function () {
-
-        var searchTerm = $("#search-value").val();
-
-        $("#search-value").val("");
-        weatherfunction(searchTerm);
-        weatherforecast(searchTerm);
-    });
+var apiKey = "1b18ce13c84e21faafb19c931bb29331";
+var savedsearches = [];
 
     $("#search-button").keypress(function (event) {
         var keycode = (event.keyCode ? event.keyCode : event.which);
