@@ -139,3 +139,26 @@ if (response.current.uvi <= 2) {
 
 };
 
+//5 Day Forecast
+
+var fivedayforecastsection = function(cityName) {
+    fetch ('https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}')
+    //response --> objects
+    .then(function(response) {
+        return response.json();
+    })
+
+    .then(function(response) {
+        //city coordinates
+        var cityLon = response.coord.lon;
+        var cityLat = response.coord.lat;
+
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely, hourly, alerts&units=imperial&appid=${apiKey}')
+    //response call api --> objects
+    .then(function(response) {
+        return response.json();
+    })
+
+    .then(function(response {
+        console.log(response);
+    
