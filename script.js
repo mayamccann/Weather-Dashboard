@@ -39,3 +39,23 @@ $("#search-input").val("");
 
 };
 
+// Search history into search history container
+var loadsearchhistory = localStorage.getItem("savedsearches");
+
+//Receive saved history
+var savedsearchhistory = localStorage.getItem("savedsearches");
+
+//false : no saved history
+if (!savedsearchhistory) {
+    return false;
+}
+
+// History string into array
+savedsearchhistory = JSON.parse(savedsearchhistory);
+
+//with savedsearchhistory array -> entry for each item in list
+for (var i = 0; i < savedsearchhistory.length; i++) {
+    searchhistorylist(savedsearchhistory[i]);
+}
+};
+
