@@ -119,12 +119,12 @@ $(document).ready(function () {
                     var cardfive = $("<div>").addClass("card bg-primary text-white");
                     var cardbodyfive = $("<div>").addClass("card-body p-2");
                     var humidfive = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
-                    var tempfive = $("<p>").addClass("card-text").text("Temperature:" + data.list[i].main.temp + "F");
+                    var tempfive = $("<p>").addClass("card-text").text("Temperature:" + data.list[i].main.temp + "°F");
 
 
                     colfive.append(cardfive.append(cardbodyfive.append(titlefive, imgfive, tempfive)));
                     
-                    $("forecast .row").append(colfive);
+                    $("#forecast .row").append(colfive);
 
                 }
             }
