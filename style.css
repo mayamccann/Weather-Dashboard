@@ -4,7 +4,9 @@
     position: absolute;
 }
 
-h1 {
+.h1-container {
     margin-bottom: 0%;
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, purple, pink);
+    padding: 5px;
 }
+
