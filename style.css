@@ -107,3 +107,14 @@ margin: 20px 25px;
 
 /*Color Scheme for Weather Labels : Favorable, Moderate, Severe*/
 
+.severe {
+    background-color: red;
+}
+
+.moderate {
+    background-color: yellow;
+}
+
+.favorable {
+    background-color: green;
+}
