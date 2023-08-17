@@ -25,5 +25,7 @@ searchentrycontainer.append(searchhistoryEntry);
 var searchhistoryContainerE1 = $("search-history-container");
 searchhistoryContainerE1.append(searchentrycontainer);
 
-
+if (savedsearches.length > 0) {
+    var previoussavedsearches = localStorage.getItem("savedsearches");
+    savedsearches = JSON.parse(previoussavedsearches);
 }
