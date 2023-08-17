@@ -36,3 +36,43 @@
 .search-history-container {
     padding: 10px;
 }
+
+.past-search {
+    background-color: white;
+    border-color: pink;
+    border-style:solid;
+    color: white;
+    border-width: thick;
+    text-align: center;
+}
+
+/*Current Weather*/
+
+.current-weather-container {
+    border-color:pink;
+    border-style: solid;
+    border-width: thin;
+}
+
+.current-title-container {
+    display: flex;
+}
+
+.current-title {
+    font-size: 50px;
+}
+
+.current-weather-icon {
+    height: 80px;
+    width: 80px;
+}
+
+.current-temperature, .current-humidity, .current-wind-speed {
+font-size: 25px;
+margin: 20px 25px;
+}
+
+.current-uv-index {
+    font-size: 25px;
+    display: inline;
+}
