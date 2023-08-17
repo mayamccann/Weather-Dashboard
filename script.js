@@ -73,9 +73,9 @@ var currentweathersection =function(cityName) {
 //city coordinates
 var cityLon= response.coord.lon;
 var cityLat= response.coord.lat;
-}
 
-fetch('https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely, hourly,alerts&units=imperial&appid=${apiKey}')
+
+fetch ('https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely,hourly,alerts&units=imperial&appid=${apiKey}')
 //response of api call --> objects
 .then(function(response) {
     return response.json();
@@ -124,6 +124,8 @@ if (response.current.uvi <= 2) {
 } else {
     currentnumber.addClass("severe");
 }
+
+})
 
 })
 
@@ -204,7 +206,7 @@ $("#search-form").on("submit", function() {
 //name of city search
 var cityName = $("#search-input").val();
 
-if (cityName === "." || cityName == null {
+if (cityName === "" || cityName == null) {
     //alert : search is empty
     alert("Please enter the name of the city.");
     event.preventDefault();
