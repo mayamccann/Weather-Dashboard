@@ -59,3 +59,19 @@ for (var i = 0; i < savedsearchhistory.length; i++) {
 }
 };
 
+var currentweathersection =function(cityName) {
+
+    //using open weather api
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}')
+
+    //response -> objects
+    .then(function(response) {
+        return response.json();
+})
+
+.then(function(response) {
+//city coordinates
+var citylon= response.coord.lon;
+var citylat= response.coord.lat;
+}
+
