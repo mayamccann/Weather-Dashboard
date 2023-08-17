@@ -216,3 +216,15 @@ if (cityName === "." || cityName == null {
 }
 });
 
+//called when search history requested
+$("#search-history-container").on("click", "p", function() {
+    var previouscityname = $(this).text();
+    currentweathersection(previouscityname);
+    fivedayforecastsection(previouscityname);
+
+    var previouscityclicked = $(this);
+    previouscityclicked.remove();
+
+});
+
+loadsearchhistory();
