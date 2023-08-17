@@ -171,6 +171,29 @@ var fivedayforecastsection = function(cityName) {
     for (var i = 1; i <= 5; i++) {
         var futurecard = $(".future-card");
         futurecard.addClass("future-card-details");
-        
 
+    //Date to forecast (5-Day)
+    var futuredate= $("#future-date-" + i);
+    date = moment().add(i, "d"). format("MM/DD/YYYY");
+    futuredate.text(date);
+
+    //Icon to forecast (5-Day)
+    var futureicon = $("#future-icon-" + i);
+    futureicon.addClass("future-icon");
+    var futureiconcode = response.daily[i].weather[0].icon;
+    futureicon.attr("src", 'https://openweathermap.org/img/wn/${futureiconcode}@2x.png');
+
+    //Temp to forecast (5-Day)
+    var futuretemp = $("#future-temp-" + i);
+    futuretemp.text("Temp:" + response.daily[i].temp.day + "/u00B0F");
+
+    //Humidity to forecast (5-Day)
+    var futurehumidity = $("#future-humidity-" + i);
+    futurehumidity.text("Humidity: " + response.daily[i].humidity + "%");
     }
+})
+
+})
+
+};
+
