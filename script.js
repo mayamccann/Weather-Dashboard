@@ -159,6 +159,18 @@ var fivedayforecastsection = function(cityName) {
         return response.json();
     })
 
-    .then(function(response {
+    .then(function(response) {
         console.log(response);
     
+
+    //Forecast title
+    var futureforecasttitle= $("#future-forecast-title");
+    futureforecasttitle.text("5-Day Forecast:")
+
+    //response data --> create each day for forecast (5-Day)
+    for (var i = 1; i <= 5; i++) {
+        var futurecard = $(".future-card");
+        futurecard.addClass("future-card-details");
+        
+
+    }
