@@ -41,7 +41,7 @@ The following image shows the web application's appearance and functionality:
 
 Creating a Weather Dashboard!
 
-![weatherdashboardinitial](https://github.com/mayamccann/Weather-Dashboard/assets/112992245/9dfe0f97-967f-4e9d-991f-9acb41351dfd)
+![weatherdashboardinitial](https://github.com/mayamccann/Weather-Dashboard/assets/112992245/ccbf7d18-0506-4847-ac8c-94b396fa4c4c)
 
 ## 💡Grading Requirements Brief Summary
 

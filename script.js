@@ -155,7 +155,7 @@ var fivedayforecastsection = function(cityName) {
         var cityLon = response.coord.lon;
         var cityLat = response.coord.lat;
 
-    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely, hourly, alerts&units=imperial&appid=${apiKey}')
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&exclude=minutely,hourly,alerts&units=imperial&appid=${apiKey}')
     //response call api --> objects
     .then(function(response) {
         return response.json();
